@@ -21,7 +21,7 @@ This project builds a live foreign exchange (FX) monitoring dashboard that track
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Data Ingestion & Processing: Python, Pandas, Requests, Logging  
 
@@ -33,7 +33,7 @@ This project builds a live foreign exchange (FX) monitoring dashboard that track
 
 ---
 
-## 🏗 System Architecture
+## System Architecture
 
 Bank of Canada API  
 → Python ETL (Historical + Incremental Load)  
@@ -44,7 +44,7 @@ Bank of Canada API
 
 ---
 
-## 📈 Dashboard Features
+## Dashboard Features
 
 - Multi-currency selection  
 - Daily exchange rate tracking (CAD base)  
@@ -56,7 +56,7 @@ Bank of Canada API
 
 ---
 
-## 🚀 Project Stages
+## Project Stages
 
 ### Stage 1 – Data Source Setup
 - Understand Bank of Canada API structure and parameters  
@@ -120,7 +120,7 @@ Bank of Canada API
 
 ---
 
-## 📋 Task List
+## Task List
 
 ### Data Engineering
 - [ ] Configure API connection  
