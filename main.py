@@ -9,7 +9,6 @@ logger = get_logger(__name__)
 def run_pipeline():
     # Always fetch yesterday's data (most recent complete day)
     yesterday = (date.today() - timedelta(days=1)).strftime("%Y-%m-%d")
-    
     logger.info(f"Running pipeline for {yesterday}")
     
     data     = fetch_exchange_rates(start_date=yesterday, end_date=yesterday)
