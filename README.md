@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project builds a production-ready data pipeline for monitoring foreign exchange rates against the Canadian Dollar (CAD). It covers the full data engineering lifecycle involving an end-to-end data pipeline that ingests foreign exchange rate data from the Canadian Border Services Agency (CBSA) API, transforms it, loads it into Google BigQuery, and visualizes it through a live Looker Studio dashboard — fully automated with daily scheduling via Google Cloud.
+This project builds a production-ready data pipeline for monitoring foreign exchange rates against the Canadian Dollar (CAD). It covers the full data engineering lifecycle involving an end-to-end data pipeline that ingests foreign exchange rate data from the Bank of Canada API, transforms it, loads it into Google BigQuery, and visualizes it through a live Looker Studio dashboard — fully automated with daily scheduling via Google Cloud.
 
 [View Live Dashboard](https://datastudio.google.com/s/uxCmk-JEY9w)
 ---
@@ -10,7 +10,7 @@ This project builds a production-ready data pipeline for monitoring foreign exch
 
 ## Key Objectives
 
-- Ingest daily FX rate data from the CBSA public API with dynamic batch handling
+- Ingest daily FX rate data from the Bank of Canada public API with dynamic batch handling
 - Clean, validate, and transform raw data into an analytics-ready format
 - Load structured data into Google BigQuery with automatic schema creation
 - Compute analytical metrics using BigQuery views
@@ -52,7 +52,7 @@ This project builds a production-ready data pipeline for monitoring foreign exch
 ## Project Stages
 
 ### Stage 1 — Data Ingestion
-- Connected to the CBSA FX rates public API
+- Connected to the FX rates public API
 - Implemented adaptive batch fetching to handle the 1000-row API response limit
 - Returns a complete `pd.DataFrame` for any date range
 
